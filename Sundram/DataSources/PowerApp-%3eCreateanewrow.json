@@ -1,0 +1,9 @@
+[
+  {
+    "AddinConnectorId": "70ca3f83-4735-4635-97f5-7c6abafe4e87",
+    "AddinId": "6d1f157d-95bf-406d-b65d-cfd3240f724e",
+    "Name": "PowerApp->Createanewrow",
+    "ServiceKind": "AddinWadl",
+    "Type": "ServiceInfo"
+  }
+]

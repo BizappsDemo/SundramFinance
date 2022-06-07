@@ -1,0 +1,267 @@
+"'Login Screen' As screen":
+    LoadingSpinnerColor: =RGBA(0, 120, 212, 1)
+
+    imgIndigoBG As image:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =728
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Image: =homescreen
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Width: =770
+        X: =566
+        Y: =20
+        ZIndex: =1
+
+    recWhiteside As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledFill: =RGBA(255, 255, 255, 1)
+        DisplayMode: =DisplayMode.Disabled
+        Fill: =RGBA(255, 255, 255, 1)
+        FocusedBorderThickness: =4
+        Height: =605
+        HoverFill: =RGBA(0, 120, 212, 1)
+        PressedFill: =RGBA(0, 120, 212, 1)
+        Width: =510
+        X: =32
+        Y: =81
+        ZIndex: =2
+
+    imgIndigoLogo As image:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =68
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Image: ='sundaram-finance-logo'
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Width: =392
+        X: =91
+        Y: =128
+        ZIndex: =3
+
+    lblWelcomeback As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =MainColor
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        FontWeight: =Semibold
+        Height: =42
+        Size: =18
+        Text: ="Welcome back!"
+        Width: =207
+        X: =114
+        Y: =223
+        ZIndex: =5
+
+    lblEmail As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Size: =12
+        Text: ="EMAIL"
+        X: =121
+        Y: =292
+        ZIndex: =6
+
+    txtEmail As text:
+        BorderColor: =RGBA(204, 204, 204, 1)
+        BorderThickness: =0.3
+        Color: =RGBA(51, 51, 51, 1)
+        Default: ="ParvatiNair@D365DEMOFY22SP699466.onmicrosoft.com"
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+        HoverColor: =RGBA(51, 51, 51, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        PressedBorderColor: =RGBA(0, 120, 212, 1)
+        PressedColor: =RGBA(51, 51, 51, 1)
+        PressedFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =12
+        X: =121
+        Y: =332
+        ZIndex: =7
+
+    lblPassword As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Size: =12
+        Text: ="PASSWORD"
+        X: =121
+        Y: =418
+        ZIndex: =8
+
+    txtPassword As text:
+        BorderColor: =RGBA(204, 204, 204, 1)
+        BorderThickness: =0.3
+        Color: =RGBA(51, 51, 51, 1)
+        Default: ="••••••••••••••••"
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+        HoverColor: =RGBA(51, 51, 51, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        PressedBorderColor: =RGBA(0, 120, 212, 1)
+        PressedColor: =RGBA(51, 51, 51, 1)
+        PressedFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =12
+        X: =121
+        Y: =458
+        ZIndex: =9
+
+    lblForgotpw As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =MainColor
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =37
+        Size: =10
+        Text: ="Forgot password?"
+        Width: =139
+        X: =321
+        Y: =421
+        ZIndex: =10
+
+    btnSignin As image:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Image: |-
+            ="data:image/svg+xml;utf8, " & EncodeUrl("<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='400' height='64' viewBox='0 0 400 64'>
+              <defs>
+                <filter id='Rectangle_258' x='0' y='0' width='400' height='64' filterUnits='userSpaceOnUse'>
+                  <feOffset dy='3' input='SourceAlpha'/>
+                  <feGaussianBlur stdDeviation='3' result='blur'/>
+                  <feFlood flood-opacity='0.161'/>
+                  <feComposite operator='in' in2='blur'/>
+                  <feComposite in='SourceGraphic'/>
+                </filter>
+              </defs>
+              <g transform='matrix(1, 0, 0, 1, 0, 0)' filter='url(#Rectangle_258)'>
+                <g id='Rectangle_258-2' data-name='Rectangle 258' transform='translate(9 6)' fill='#035B9E' stroke='rgba(112,112,112,0.51)' stroke-width='0.3'>
+                  <rect width='382' height='46' stroke='none'/>
+                  <rect x='0.15' y='0.15' width='381.7' height='45.7' fill='none'/>
+                </g>
+              </g>
+            </svg>
+            ")
+        OnSelect: =Navigate('News and Updates Screen',ScreenTransition.Fade) 
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Width: =346
+        X: =107
+        Y: =535
+        ZIndex: =11
+
+    lblSignin As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        OnSelect: =Navigate('News and Updates Screen',ScreenTransition.Fade) 
+        Size: =13
+        Text: ="SIGN IN"
+        X: =205
+        Y: =565
+        ZIndex: =12
+
+    Rectangle8 As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledFill: =MainColor
+        DisplayMode: =DisplayMode.Disabled
+        Fill: =MainColor
+        FocusedBorderThickness: =4
+        Height: =728
+        HoverFill: =RGBA(0, 120, 212, 1)
+        PressedFill: =RGBA(0, 120, 212, 1)
+        Width: =3
+        X: =552
+        Y: =22
+        ZIndex: =13
+
+    Button1 As button:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(0, 0, 0, 0)
+        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Height: =50
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =Transparent
+        OnSelect: =Navigate('News and Updates Screen',ScreenTransition.Fade) 
+        PressedBorderColor: =Transparent
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =White
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =15
+        Text: =""
+        Width: =346
+        X: =107
+        Y: =560
+        ZIndex: =14
+

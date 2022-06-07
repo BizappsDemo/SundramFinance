@@ -1,0 +1,55 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "subjects",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "subject",
+    "MaxGetRowsCount": 500,
+    "Name": "Subjects",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "adx_subject_webfile": "Web Files",
+      "adx_subject_webpage": "Web Pages",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "description": "Description",
+      "featuremask": "Feature Mask",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "msdyn_subject_knowledgearticletemplate_subjectid": "Knowledge Article Templates",
+      "organizationid": "Organization",
+      "overriddencreatedon": "Record Created On",
+      "parentsubject": "Parent Subject",
+      "Subject_AsyncOperations": "System Jobs",
+      "Subject_BulkDeleteFailures": "Bulk Delete Failures",
+      "subject_incidents": "Cases",
+      "subject_kb_articles": "Articles",
+      "subject_knowledgearticles": "Knowledge Articles",
+      "subject_parent_subject": "Subjects",
+      "Subject_ProcessSessions": "Process Sessions",
+      "subject_products": "Products",
+      "subject_sales_literature": "Sales Literature",
+      "Subject_SyncErrors": "Sync Errors",
+      "subjectid": "Subject",
+      "title": "Title",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Subjects",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Subjects (Views)",
+    "Name": "_subject_views",
+    "RelatedEntityName": "Subjects",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "796024e0-4525-4dfe-a23f-6b3b6000099d": "All Subjects",
+      "fa1a7ef7-53e4-40a6-97d2-5935adaf1277": "Subject Lookup View"
+    }
+  }
+]

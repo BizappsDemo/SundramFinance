@@ -1,0 +1,30 @@
+App As appinfo:
+    BackEnabled: =false
+    OnStart: |-
+        =Set(varFirstDayOfMonth, 
+            Date(
+                Year(Today()),
+                Month(Today()),
+                1
+            )
+        )
+        
+        &
+        
+        Set(Feb15, false) & Set(Feb12, false) & Set(Feb22, false) & Set(Todaytext, true);
+        
+        ClearCollect(salesNotif, 
+        {
+            notif: "You have upcoming route for today",
+            title: "Upcoming route"
+        },
+        {
+            notif: "Set up a meeting with RK Traders",
+            title: "Meeting suggestion"
+        },
+        {
+            notif: "Follow-up with Rafeeq Transport",
+            title: "Make a call"
+        });
+        Set(notifVisible, false);Set(newLeadVisible, false);Set(newQueryVisible, false);
+

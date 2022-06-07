@@ -1,0 +1,947 @@
+"'News and Updates Screen' As screen":
+    Fill: =RGBA(230, 230, 230, 1)
+    LoadingSpinnerColor: =RGBA(0, 120, 212, 1)
+    OnVisible: =
+
+    recWhiteNavbar As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledFill: =RGBA(255, 255, 255, 1)
+        DisplayMode: =DisplayMode.Disabled
+        Fill: =RGBA(255, 255, 255, 1)
+        FocusedBorderThickness: =4
+        Height: =75
+        HoverFill: =RGBA(0, 120, 212, 1)
+        PressedFill: =RGBA(0, 120, 212, 1)
+        Width: =1366
+        ZIndex: =1
+
+    recWhiteSidebar As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledFill: =RGBA(255, 255, 255, 1)
+        DisplayMode: =DisplayMode.Disabled
+        Fill: =RGBA(255, 255, 255, 1)
+        FocusedBorderThickness: =4
+        Height: =657
+        HoverFill: =Transparent
+        PressedFill: =RGBA(0, 120, 212, 1)
+        Width: =334
+        X: =14
+        Y: =91
+        ZIndex: =2
+
+    imgIndigoLogo2 As image:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =62
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Image: ='sundaram-finance-logo'
+        OnSelect: =Navigate('News and Updates Screen', ScreenTransition.Fade)
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Width: =312
+        X: =10
+        Y: =10
+        ZIndex: =3
+
+    imgBell As image:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =34
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Image: =bell
+        OnSelect: =Set(notifVisible, !notifVisible)
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Width: =45
+        X: =1234
+        Y: =14
+        ZIndex: =4
+
+    icnCircle As circle:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledFill: =RGBA(0, 120, 212, 1)
+        Fill: =RGBA(226, 19, 19, 1)
+        Height: =20
+        HoverFill: =RGBA(0, 120, 212, 1)
+        PressedFill: =RGBA(0, 120, 212, 1)
+        Width: =20
+        X: =1262
+        Y: =10
+        ZIndex: =5
+
+    imgUserBig As image:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =120
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Image: =Parvati_Nair
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        RadiusBottomLeft: =60
+        RadiusBottomRight: =60
+        RadiusTopLeft: =60
+        RadiusTopRight: =60
+        Width: =120
+        X: =121
+        Y: =117
+        ZIndex: =6
+
+    imgUserSmall As image:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =40
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Image: =Parvati_Nair
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        RadiusBottomLeft: =20
+        RadiusBottomRight: =20
+        RadiusTopLeft: =20
+        RadiusTopRight: =20
+        Width: =40
+        X: =1298
+        Y: =10
+        ZIndex: =7
+
+    lblAgenciesVal As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(103, 103, 103, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        FontWeight: =Semibold
+        Size: =12
+        Text: ="24"
+        Width: =38
+        X: =118
+        Y: =308
+        ZIndex: =10
+
+    grpGreeting As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =10
+
+        lblHello As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            Size: =18
+            Text: ="Hello, "
+            X: =14
+            Y: =246
+            ZIndex: =8
+
+        lblfullname As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =MainColor.Fill
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            FontWeight: =Bold
+            Size: =18
+            Text: |-
+                =//"Parvati Nair! "
+                User().FullName & " !"
+            Width: =200
+            X: =117
+            Y: =246
+            ZIndex: =9
+
+    lblBookingsVal As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(103, 103, 103, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        FontWeight: =Semibold
+        Size: =12
+        Text: ="3"
+        Width: =54
+        X: =191
+        Y: =308
+        ZIndex: =11
+
+    lblSeparator As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(103, 103, 103, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Size: =12
+        Text: ="|"
+        Width: =22
+        X: =169
+        Y: =308
+        ZIndex: =12
+
+    lblAgencies As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(103, 103, 103, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Size: =12
+        Text: ="Dealers"
+        Width: =83
+        X: =96
+        Y: =334
+        ZIndex: =13
+
+    lblBookings As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(103, 103, 103, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Size: =12
+        Text: ="Anchors"
+        Width: =86
+        X: =179
+        Y: =334
+        ZIndex: =14
+
+    lblLogout As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(68, 68, 68, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        FontWeight: =Normal
+        Height: =42
+        OnSelect: =Navigate('Login Screen', ScreenTransition.Fade)
+        Size: =16
+        Text: ="Log out"
+        Width: =105
+        X: =153
+        Y: =690
+        ZIndex: =15
+
+    imgLogout As image:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =29
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Image: |-
+            ="data:image/svg+xml;utf8, " & EncodeUrl("<svg xmlns='http://www.w3.org/2000/svg' width='18' height='16.128' viewBox='0 0 18 16.128'>
+              <path id='Icon_open-account-logout' data-name='Icon open-account-logout' d='M6.75,0V2.3h9v11.52h-9v2.3H18V0ZM4.5,4.608,0,8.064,4.5,11.52v-2.3h9v-2.3h-9Z' fill='#444'/>
+            </svg>")
+        OnSelect: =Navigate('Login Screen', ScreenTransition.Fade)
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Width: =32
+        X: =102
+        Y: =699
+        ZIndex: =16
+
+    "'News and Updates text' As label":
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(68, 68, 68, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Bold
+        Size: =25
+        Text: ="News and Updates"
+        Width: =325
+        X: =362
+        Y: =94
+        ZIndex: =18
+
+    "'Date today text' As label":
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(178, 178, 178, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =35
+        Size: =17
+        Text: =Text( Today(), DateTimeFormat.LongDate )
+        Width: =360
+        X: =362
+        Y: =134
+        ZIndex: =19
+
+    "'Top Stories Text' As htmlViewer":
+        Color: =RGBA(3, 91, 158, 1)
+        DisplayMode: =DisplayMode.View
+        Font: =Font.'Segoe UI'
+        Height: =43
+        HtmlText: ="Top <b>Stories</b>"
+        Size: =17
+        Tooltip: =false
+        Width: =150
+        X: =380
+        Y: =169
+        ZIndex: =20
+
+    "'Top Stories Head' As rectangle":
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledFill: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(3, 91, 158, 1)
+        FocusedBorderThickness: =4
+        Height: =5
+        HoverFill: =RGBA(0, 120, 212, 1)
+        PressedFill: =RGBA(0, 120, 212, 1)
+        Width: =320
+        X: =367
+        Y: =207
+        ZIndex: =21
+
+    "'Agency Updates Text' As htmlViewer":
+        Color: =AccentColor2
+        DisplayMode: =DisplayMode.View
+        Fill: =
+        Font: =Font.'Segoe UI'
+        Height: =43
+        HtmlText: ="Dealer <b>Updates</b>"
+        Size: =17
+        Tooltip: =false
+        Width: =206
+        X: =713
+        Y: =169
+        ZIndex: =22
+
+    "'Agency Updates Head' As rectangle":
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledFill: =RGBA(166, 166, 166, 1)
+        Fill: =AccentColor2
+        FocusedBorderThickness: =4
+        Height: =5
+        HoverFill: =RGBA(0, 120, 212, 1)
+        PressedFill: =RGBA(0, 120, 212, 1)
+        Width: =308
+        X: =698
+        Y: =207
+        ZIndex: =23
+
+    "'My Tasks Head' As rectangle":
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledFill: =RGBA(166, 166, 166, 1)
+        Fill: =AccentColor
+        FocusedBorderThickness: =4
+        Height: =4
+        HoverFill: =RGBA(0, 120, 212, 1)
+        PressedFill: =RGBA(0, 120, 212, 1)
+        Width: =336
+        X: =1015
+        Y: =207
+        ZIndex: =24
+
+    "'My Tasks Text' As htmlViewer":
+        Color: =AccentColor
+        DisplayMode: =DisplayMode.View
+        Font: =Font.'Segoe UI'
+        Height: =43
+        HtmlText: ="My <b>Tasks</b>"
+        Size: =17
+        Tooltip: =false
+        Width: =206
+        X: =1026
+        Y: =169
+        ZIndex: =25
+
+    Rectangle6 As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledFill: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        FocusedBorderThickness: =4
+        Height: =392
+        HoverFill: =RGBA(0, 120, 212, 1)
+        PressedFill: =RGBA(0, 120, 212, 1)
+        Visible: =notifVisible
+        Width: =321
+        X: =1045
+        Y: =62
+        ZIndex: =26
+
+    Label17 As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Bold
+        Height: =22
+        Size: =11
+        Text: ="3"
+        Width: =21
+        X: =1263
+        Y: =9
+        ZIndex: =27
+
+    "'Top Stories' As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+        BorderColor: =RGBA(166, 166, 166, 1)
+        BorderStyle: =BorderStyle.None
+        Height: =511
+        Items: =TopStories
+        Layout: =Layout.Vertical
+        OnSelect: =Launch(ThisItem.Source)
+        ShowScrollbar: =false
+        TemplatePadding: =0
+        TemplateSize: =126
+        Width: =319
+        X: =368
+        Y: =212
+        ZIndex: =28
+
+        HtmlText1 As htmlViewer:
+            Height: =154
+            HtmlText: |-
+                ="<div style='margin:5px;width:"&Parent.TemplateWidth-20&"px;height:105px;background-Color:#fff;box-shadow:0 3px 6px 1px  #ccc; border-radius:2px'></div>"
+            OnSelect: =Select(Parent)
+            Width: =319
+            ZIndex: =1
+
+        Image1_2 As image:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
+            Height: =79
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Image: =ThisItem.Image
+            ImagePosition: =ImagePosition.Fill
+            OnSelect: =Select(Parent)
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            Width: =113
+            X: =21
+            Y: =21
+            ZIndex: =2
+
+        Title1 As label:
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Height: =79
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =10
+            Text: =ThisItem.Title 
+            VerticalAlign: =VerticalAlign.Top
+            Width: =154
+            X: =148
+            Y: =21
+            ZIndex: =3
+
+        Subtitle1 As label:
+            Color: =RGBA(149, 149, 149, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
+            Height: =20
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =10
+            Text: =Text(Today(), DateTimeFormat.LongDate)
+            VerticalAlign: =VerticalAlign.Top
+            Visible: =false
+            Width: =154
+            X: =148
+            Y: =80
+            ZIndex: =4
+
+        Separator1 As rectangle:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            Fill: =RGBA(249, 249, 249, 1)
+            Height: =16
+            OnSelect: =Select(Parent)
+            Visible: =false
+            Width: =Parent.TemplateWidth
+            Y: =130
+            ZIndex: =5
+
+    "gal_dealerUpdates As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+        BorderColor: =RGBA(166, 166, 166, 1)
+        BorderStyle: =BorderStyle.None
+        Height: =511
+        Items: =DealerUpdates
+        Layout: =Layout.Vertical
+        OnSelect: =Launch(ThisItem.Source)
+        ShowScrollbar: =false
+        TemplatePadding: =0
+        TemplateSize: =126
+        Width: =319
+        X: =692
+        Y: =212
+        ZIndex: =29
+
+        HtmlText1_1 As htmlViewer:
+            Height: =126
+            HtmlText: |-
+                ="<div style='margin:5px;width:"&Parent.TemplateWidth-20&"px;height:105px;background-Color:#fff;box-shadow:0 3px 6px 1px  #ccc; border-radius:2px'></div>"
+            OnSelect: =Select(Parent)
+            Width: =319
+            ZIndex: =1
+
+        Image1_3 As image:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
+            Height: =79
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Image: =ThisItem.Image
+            OnSelect: =Select(Parent)
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            Width: =113
+            X: =21
+            Y: =21
+            ZIndex: =2
+
+        Title1_1 As label:
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Bold
+            Height: =21
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =10
+            Text: =ThisItem.Title 
+            VerticalAlign: =VerticalAlign.Top
+            Width: =154
+            X: =148
+            Y: =21
+            ZIndex: =3
+
+        Subtitle1_1 As label:
+            Color: =RGBA(149, 149, 149, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
+            Height: =20
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =10
+            Text: =Text(Today(), DateTimeFormat.LongDate)
+            VerticalAlign: =VerticalAlign.Top
+            Visible: =false
+            Width: =154
+            X: =148
+            Y: =80
+            ZIndex: =4
+
+        Separator1_1 As rectangle:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            Fill: =RGBA(249, 249, 249, 1)
+            Height: =16
+            OnSelect: =Select(Parent)
+            Visible: =false
+            Width: =Parent.TemplateWidth
+            Y: =110
+            ZIndex: =5
+
+        Title1_7 As label:
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
+            Height: =58
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =10
+            Text: =ThisItem.Description 
+            VerticalAlign: =VerticalAlign.Top
+            Width: =154
+            X: =148
+            Y: =42
+            ZIndex: =6
+
+    "gal_dealerUpdates_1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+        BorderColor: =RGBA(166, 166, 166, 1)
+        BorderStyle: =BorderStyle.None
+        Height: =511
+        Items: =MyTask
+        Layout: =Layout.Vertical
+        OnSelect: =Launch(ThisItem.Source)
+        ShowScrollbar: =false
+        TemplatePadding: =0
+        TemplateSize: =126
+        Width: =319
+        X: =1019
+        Y: =212
+        ZIndex: =30
+
+        HtmlText1_2 As htmlViewer:
+            Height: =126
+            HtmlText: |-
+                ="<div style='margin:5px;width:"&Parent.TemplateWidth-20&"px;height:105px;background-Color:#fff;box-shadow:0 3px 6px 1px  #ccc; border-radius:2px'></div>"
+            OnSelect: =Select(Parent)
+            Width: =319
+            ZIndex: =1
+
+        Title1_2 As label:
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Bold
+            Height: =59
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =10
+            Text: =ThisItem.Title
+            VerticalAlign: =VerticalAlign.Top
+            Width: =177
+            X: =98
+            Y: =21
+            ZIndex: =3
+
+        Subtitle1_2 As label:
+            Color: =RGBA(149, 149, 149, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
+            Height: =20
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =10
+            Text: =Text(Today(), DateTimeFormat.LongDate)
+            VerticalAlign: =VerticalAlign.Top
+            Visible: =false
+            Width: =154
+            X: =148
+            Y: =80
+            ZIndex: =4
+
+        Separator1_2 As rectangle:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            Fill: =RGBA(249, 249, 249, 1)
+            Height: =16
+            OnSelect: =Select(Parent)
+            Visible: =false
+            Width: =Parent.TemplateWidth
+            Y: =110
+            ZIndex: =5
+
+        Checkbox1 As checkbox:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            CheckboxBorderColor: =RGBA(102, 102, 102, 1)
+            CheckmarkFill: =RGBA(0, 120, 212, 1)
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            Height: =34
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverColor: =RGBA(51, 51, 51, 1)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            OnSelect: =Select(Parent)
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedColor: =RGBA(51, 51, 51, 1)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            Size: =13
+            Text: =
+            Width: =39
+            X: =29
+            Y: =21
+            ZIndex: =6
+
+    Gallery4 As gallery.galleryVertical:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        Fill: =MainColor.Fill
+        Height: =358
+        Items: =salesNotif
+        Layout: =Layout.Vertical
+        TemplateSize: =104
+        Visible: =notifVisible
+        Width: =321
+        X: =1045
+        Y: =62
+        ZIndex: =31
+
+        HtmlText1_4 As htmlViewer:
+            Height: =147
+            HtmlText: |-
+                ="<div style='margin:5px;width:"&Parent.TemplateWidth-20&"px;height:100px;background-Color:#fff;box-shadow:0 3px 6px 1px  #ccc; border-radius:2px'></div>"
+            OnSelect: =Select(Parent)
+            Width: =311
+            ZIndex: =1
+
+        Label16 As label:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            Height: =47
+            OnSelect: =Select(Parent)
+            Size: =12
+            Text: =ThisItem.notif
+            Width: =231
+            X: =42
+            Y: =55
+            ZIndex: =2
+
+        Label16_1 As label:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            FontWeight: =Semibold
+            Height: =47
+            OnSelect: =Select(Parent)
+            Size: =16
+            Text: =ThisItem.title
+            Width: =231
+            X: =42
+            Y: =14
+            ZIndex: =3
+
+    galMainMenu_4 As gallery.galleryVertical:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        Height: =223
+        Items: |-
+            =Table({id:1,Title:"My Updates",icon: "data:image/svg+xml;utf8, " & EncodeUrl(
+                        "<svg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18 18'>
+              <path id='Icon_awesome-newspaper' data-name='Icon awesome-newspaper' d='M17.25,4.5H2.75C2.336,4.5,2,5,2,5.625V6H.75C.336,6,0,6.5,0,7.125v12.75C0,21.325.784,22.5,1.75,22.5H16.5c.828,0,1.5-1.007,1.5-2.25V5.625C18,5,17.664,4.5,17.25,4.5ZM1.75,20.25c-.138,0-.25-.168-.25-.375V8.25H2V19.875C2,20.082,1.888,20.25,1.75,20.25Zm7.375-.75H4.375c-.207,0-.375-.252-.375-.562v-.375c0-.311.168-.562.375-.562h4.75c.207,0,.375.252.375.563v.375C9.5,19.248,9.332,19.5,9.125,19.5Zm6.5,0h-4.75c-.207,0-.375-.252-.375-.562v-.375c0-.311.168-.562.375-.562h4.75c.207,0,.375.252.375.563v.375C16,19.248,15.832,19.5,15.625,19.5ZM9.125,15H4.375C4.168,15,4,14.748,4,14.438v-.375c0-.311.168-.562.375-.562h4.75c.207,0,.375.252.375.563v.375C9.5,14.748,9.332,15,9.125,15Zm6.5,0h-4.75c-.207,0-.375-.252-.375-.562v-.375c0-.311.168-.562.375-.562h4.75c.207,0,.375.252.375.563v.375C16,14.748,15.832,15,15.625,15Zm0-4.5H4.375C4.168,10.5,4,10.248,4,9.938V8.063c0-.311.168-.562.375-.562h11.25c.207,0,.375.252.375.563V9.938C16,10.248,15.832,10.5,15.625,10.5Z' transform='translate(0 -4.5)' fill='#444444'/>
+            </svg>"
+                    ),
+                    iconSelected: "data:image/svg+xml;utf8, " & EncodeUrl(
+                        "<svg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18 18'>
+              <path id='Icon_awesome-newspaper' data-name='Icon awesome-newspaper' d='M17.25,4.5H2.75C2.336,4.5,2,5,2,5.625V6H.75C.336,6,0,6.5,0,7.125v12.75C0,21.325.784,22.5,1.75,22.5H16.5c.828,0,1.5-1.007,1.5-2.25V5.625C18,5,17.664,4.5,17.25,4.5ZM1.75,20.25c-.138,0-.25-.168-.25-.375V8.25H2V19.875C2,20.082,1.888,20.25,1.75,20.25Zm7.375-.75H4.375c-.207,0-.375-.252-.375-.562v-.375c0-.311.168-.562.375-.562h4.75c.207,0,.375.252.375.563v.375C9.5,19.248,9.332,19.5,9.125,19.5Zm6.5,0h-4.75c-.207,0-.375-.252-.375-.562v-.375c0-.311.168-.562.375-.562h4.75c.207,0,.375.252.375.563v.375C16,19.248,15.832,19.5,15.625,19.5ZM9.125,15H4.375C4.168,15,4,14.748,4,14.438v-.375c0-.311.168-.562.375-.562h4.75c.207,0,.375.252.375.563v.375C9.5,14.748,9.332,15,9.125,15Zm6.5,0h-4.75c-.207,0-.375-.252-.375-.562v-.375c0-.311.168-.562.375-.562h4.75c.207,0,.375.252.375.563v.375C16,14.748,15.832,15,15.625,15Zm0-4.5H4.375C4.168,10.5,4,10.248,4,9.938V8.063c0-.311.168-.562.375-.562h11.25c.207,0,.375.252.375.563V9.938C16,10.248,15.832,10.5,15.625,10.5Z' transform='translate(0 -4.5)' fill='#035B9E'/>
+            </svg>"
+                    )},{id:2,Title:"My Dashboard",
+                    icon: "data:image/svg+xml;utf8, " & EncodeUrl(
+                        "<svg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18 18'>
+              <path id='Icon_material-dashboard' data-name='Icon material-dashboard' d='M4.5,14.5h8V4.5h-8Zm0,8h8v-6h-8Zm10,0h8v-10h-8Zm0-18v6h8v-6Z' transform='translate(-4.5 -4.5)' fill='#444'/>
+            </svg>"
+                    ),
+                    iconSelected: "data:image/svg+xml;utf8, " & EncodeUrl(
+                        "<svg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18 18'>
+              <path id='Icon_material-dashboard' data-name='Icon material-dashboard' d='M4.5,14.5h8V4.5h-8Zm0,8h8v-6h-8Zm10,0h8v-10h-8Zm0-18v6h8v-6Z' transform='translate(-4.5 -4.5)' fill='#3b9cff'/>
+            </svg>
+            "
+                    )},{id:3,Title:"My Schedule",icon: "data:image/svg+xml;utf8, " & EncodeUrl(
+                        "<svg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18 18'>
+              <path id='Icon_awesome-calendar-alt' data-name='Icon awesome-calendar-alt' d='M0,16.313A1.821,1.821,0,0,0,1.929,18H16.071A1.821,1.821,0,0,0,18,16.313V6.75H0ZM12.857,9.422A.456.456,0,0,1,13.339,9h1.607a.456.456,0,0,1,.482.422v1.406a.456.456,0,0,1-.482.422H13.339a.456.456,0,0,1-.482-.422Zm0,4.5a.456.456,0,0,1,.482-.422h1.607a.456.456,0,0,1,.482.422v1.406a.456.456,0,0,1-.482.422H13.339a.456.456,0,0,1-.482-.422Zm-5.143-4.5A.456.456,0,0,1,8.2,9H9.8a.456.456,0,0,1,.482.422v1.406a.456.456,0,0,1-.482.422H8.2a.456.456,0,0,1-.482-.422Zm0,4.5A.456.456,0,0,1,8.2,13.5H9.8a.456.456,0,0,1,.482.422v1.406a.456.456,0,0,1-.482.422H8.2a.456.456,0,0,1-.482-.422Zm-5.143-4.5A.456.456,0,0,1,3.054,9H4.661a.456.456,0,0,1,.482.422v1.406a.456.456,0,0,1-.482.422H3.054a.456.456,0,0,1-.482-.422Zm0,4.5a.456.456,0,0,1,.482-.422H4.661a.456.456,0,0,1,.482.422v1.406a.456.456,0,0,1-.482.422H3.054a.456.456,0,0,1-.482-.422ZM16.071,2.25H14.143V.563A.609.609,0,0,0,13.5,0H12.214a.609.609,0,0,0-.643.563V2.25H6.429V.563A.609.609,0,0,0,5.786,0H4.5a.609.609,0,0,0-.643.563V2.25H1.929A1.821,1.821,0,0,0,0,3.938V5.625H18V3.938A1.821,1.821,0,0,0,16.071,2.25Z' fill='#444'/>
+            </svg>"
+                    ),
+                    iconSelected: "data:image/svg+xml;utf8, " & EncodeUrl(
+                        "<svg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18 18'>
+              <path id='Icon_awesome-calendar-alt' data-name='Icon awesome-calendar-alt' d='M0,16.313A1.821,1.821,0,0,0,1.929,18H16.071A1.821,1.821,0,0,0,18,16.313V6.75H0ZM12.857,9.422A.456.456,0,0,1,13.339,9h1.607a.456.456,0,0,1,.482.422v1.406a.456.456,0,0,1-.482.422H13.339a.456.456,0,0,1-.482-.422Zm0,4.5a.456.456,0,0,1,.482-.422h1.607a.456.456,0,0,1,.482.422v1.406a.456.456,0,0,1-.482.422H13.339a.456.456,0,0,1-.482-.422Zm-5.143-4.5A.456.456,0,0,1,8.2,9H9.8a.456.456,0,0,1,.482.422v1.406a.456.456,0,0,1-.482.422H8.2a.456.456,0,0,1-.482-.422Zm0,4.5A.456.456,0,0,1,8.2,13.5H9.8a.456.456,0,0,1,.482.422v1.406a.456.456,0,0,1-.482.422H8.2a.456.456,0,0,1-.482-.422Zm-5.143-4.5A.456.456,0,0,1,3.054,9H4.661a.456.456,0,0,1,.482.422v1.406a.456.456,0,0,1-.482.422H3.054a.456.456,0,0,1-.482-.422Zm0,4.5a.456.456,0,0,1,.482-.422H4.661a.456.456,0,0,1,.482.422v1.406a.456.456,0,0,1-.482.422H3.054a.456.456,0,0,1-.482-.422ZM16.071,2.25H14.143V.563A.609.609,0,0,0,13.5,0H12.214a.609.609,0,0,0-.643.563V2.25H6.429V.563A.609.609,0,0,0,5.786,0H4.5a.609.609,0,0,0-.643.563V2.25H1.929A1.821,1.821,0,0,0,0,3.938V5.625H18V3.938A1.821,1.821,0,0,0,16.071,2.25Z' fill='#3b9cff'/>
+            </svg>
+            "
+                    )},{id:4,Title:"My Leads",icon: "data:image/svg+xml;utf8, " & EncodeUrl(
+                        "<svg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18 18'>
+              <path id='Icon_material-people' data-name='Icon material-people' d='M13.773,15.214c1.358,0,2.446-1.723,2.446-3.857S15.131,7.5,13.773,7.5s-2.455,1.723-2.455,3.857S12.415,15.214,13.773,15.214Zm-6.545,0c1.358,0,2.446-1.723,2.446-3.857S8.585,7.5,7.227,7.5,4.773,9.223,4.773,11.357,5.869,15.214,7.227,15.214Zm0,2.571c-1.906,0-5.727,1.5-5.727,4.5V25.5H12.955V22.286C12.955,19.29,9.134,17.786,7.227,17.786Zm6.545,0a6.121,6.121,0,0,0-.794.064,6.519,6.519,0,0,1,1.612,4.436V25.5H19.5V22.286C19.5,19.29,15.679,17.786,13.773,17.786Z' transform='translate(-1.5 -7.5)' fill='#444'/>
+            </svg>
+            "
+                    ),
+                    iconSelected: "data:image/svg+xml;utf8, " & EncodeUrl(
+                        "<svg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18 18'>
+              <path id='Icon_material-people' data-name='Icon material-people' d='M13.773,15.214c1.358,0,2.446-1.723,2.446-3.857S15.131,7.5,13.773,7.5s-2.455,1.723-2.455,3.857S12.415,15.214,13.773,15.214Zm-6.545,0c1.358,0,2.446-1.723,2.446-3.857S8.585,7.5,7.227,7.5,4.773,9.223,4.773,11.357,5.869,15.214,7.227,15.214Zm0,2.571c-1.906,0-5.727,1.5-5.727,4.5V25.5H12.955V22.286C12.955,19.29,9.134,17.786,7.227,17.786Zm6.545,0a6.121,6.121,0,0,0-.794.064,6.519,6.519,0,0,1,1.612,4.436V25.5H19.5V22.286C19.5,19.29,15.679,17.786,13.773,17.786Z' transform='translate(-1.5 -7.5)' fill='#3b9cff'/>
+            </svg>
+            "
+                    )})
+        Layout: =Layout.Vertical
+        OnSelect: =
+        ShowScrollbar: =false
+        TemplateSize: =50
+        Width: =320
+        X: =28
+        Y: =403
+        ZIndex: =32
+
+        Image4 As image:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
+            Height: =38
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Image: =If(ThisItem.id = 1,ThisItem.iconSelected,ThisItem.icon)
+            OnSelect: =Select(Parent)
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            Width: =47
+            X: =33
+            Y: =6
+            ZIndex: =1
+
+        imgMenuIcon_4 As image:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
+            Height: =26
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Image: =//If(ThisItem.IsSelected, ThisItem.iconSelected, ThisItem.icon)
+            OnSelect: =
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            Width: =48
+            X: =33
+            Y: =12
+            ZIndex: =2
+
+        recMenusidebar_4 As rectangle:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            DisabledFill: =MainColor.Fill
+            DisplayMode: =DisplayMode.Disabled
+            Fill: =MainColor.Fill
+            FocusedBorderThickness: =4
+            Height: =50
+            HoverFill: =RGBA(0, 120, 212, 1)
+            OnSelect: =Select(Parent)
+            PressedFill: =RGBA(0, 120, 212, 1)
+            Visible: =If(ThisItem.id = 1, true, false)
+            Width: =11
+            ZIndex: =3
+
+        Button5_1 As button:
+            Align: =Align.Left
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            Color: =If(ThisItem.id = 1,MainColor.Fill,Black)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(0, 0, 0, 0)
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Height: =50
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverColor: =RGBA(0, 0, 0, 1)
+            HoverFill: =Transparent
+            OnSelect: =Select(Parent);Switch(ThisItem.id,1,Navigate('News and Updates Screen',ScreenTransition.Fade),2,Navigate('Dashboard Screen',ScreenTransition.Fade),3,Navigate('Calendar Screen',ScreenTransition.Fade),4,Navigate('My Leads Screen',ScreenTransition.Fade))
+            PaddingLeft: =100
+            PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
+            PressedColor: =RGBA(255, 255, 255, 1)
+            PressedFill: =White
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =15
+            Text: =ThisItem.Title
+            Width: =324
+            ZIndex: =4
+
